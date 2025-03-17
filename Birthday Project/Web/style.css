@@ -1,0 +1,299 @@
+body {
+  margin: 0px;
+  overflow: hidden;
+}
+
+.canvas {
+  border: 25px black solid;
+  width: 430px;
+  height: 932px;
+}
+
+.display {
+  position: relative;
+
+  width: 100%;
+  height: 75%;
+  border: 5px red solid;
+}
+
+.background {
+  position: relative;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 1000vw;
+  height: 100%;
+  background-repeat: repeat-x;
+  background-image: url("../Aseprite/house/wallsprite.png");
+  background-size: contain;
+  position: absolute;
+}
+
+.player {
+  position: absolute;
+  left: 25px;
+  bottom: 0px;
+  background-image: url("../Aseprite/Kucing Idle Right.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30%;
+  height: 20%;
+  border-radius: 100%;
+}
+
+.controller {
+  background-image: url("../Aseprite/backgroundTombol.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.movingButton {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  width: 50%;
+  height: 100%;
+}
+
+.movingButton .left {
+  z-index: 100;
+  margin-top: 10%;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-image: url("../Aseprite/Left Button.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 251px;
+  height: 225px;
+}
+
+.movingButton .right {
+  z-index: 100;
+  margin-top: 10%;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-image: url("../Aseprite/Right Button.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 251px;
+  height: 220px;
+}
+
+.actionButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 200px;
+}
+
+.actionButton .button {
+  z-index: 100;
+  display: none;
+  top: 5%;
+  background-image: url("../Aseprite/Action Button.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 90px;
+}
+
+.actionFrame {
+  z-index: -1;
+  top: 50%;
+  position: absolute;
+  width: 100%;
+  height: 500px;
+}
+
+.scroll {
+  position: absolute;
+  left: 1000px;
+  background-image: url("../Aseprite/Note 1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 100px;
+}
+
+.photo1 {
+  position: absolute;
+  left: 1500px;
+  background-image: url("../Aseprite/Frame1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 130px;
+  height: 130px;
+}
+.music {
+  position: absolute;
+  left: 2000px;
+  background-image: url("../Aseprite/Music.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 130px;
+  height: 130px;
+}
+
+.video {
+  position: absolute;
+  left: 2500px;
+  background-image: url("../Aseprite/Video.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 130px;
+  height: 130px;
+}
+
+.catChat {
+  display: none;
+  position: absolute;
+  background-image: url("../Aseprite/cat love.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: -50px;
+  right: -30px;
+  width: 128px;
+  height: 128px;
+}
+
+.blur {
+  width: 100%;
+  height: 100%;
+}
+
+.effectBlur {
+  backdrop-filter: blur(10px); /* Blur hanya di latar belakang */
+}
+
+.isi {
+  display: block;
+}
+
+.scrollIsi1 {
+  display: none;
+  background-image: url("../Aseprite/notewallIsi1.png");
+}
+
+.scrollIsi2 {
+  display: none;
+  background-image: url("../Aseprite/notewallIsi2.png");
+}
+.scrollIsi3 {
+  display: none;
+  background-image: url("../Aseprite/notewallIsi3.png");
+}
+.scrollIsi4 {
+  display: none;
+  background-image: url("../Aseprite/notewallIsi4.png");
+}
+.scrollIsi5 {
+  display: none;
+  background-image: url("../Aseprite/notewallIsi5.png");
+}
+
+.blur .scrollIsi1,
+.scrollIsi2,
+.scrollIsi3,
+.scrollIsi4,
+.scrollIsi5 {
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 440px;
+  height: 709px;
+}
+
+.audio {
+  z-index: 100;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+}
+
+.photoLabel {
+  display: none;
+  position: absolute;
+  font-family: "Tektur", sans-serif;
+  top: 10%;
+}
+
+.photoIsi1 {
+  display: none;
+  background-image: url("../Aseprite/Foto/1.png");
+}
+.photoIsi2 {
+  display: none;
+  background-image: url("../Aseprite/Foto/2.png");
+}
+.photoIsi3 {
+  display: none;
+  background-image: url("../Aseprite/Foto/3.png");
+}
+.photoIsi4 {
+  display: none;
+  background-image: url("../Aseprite/Foto/4.png");
+}
+.photoIsi5 {
+  display: none;
+  background-image: url("../Aseprite/Foto/5.png");
+}
+
+.photoIsi1,
+.photoIsi2,
+.photoIsi3,
+.photoIsi4,
+.photoIsi5 {
+  top: 20%;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 430px;
+}
+
+.interak {
+  background-image: url("../Aseprite/backgroundTombol.png");
+  background-size: contain;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 22%;
+}
+
+.interak .leftInterak,
+.interak .rightInterak,
+.interak .closeInterak {
+  z-index: 100;
+  margin-left: 30px;
+  margin-right: 30px;
+  width: 100px;
+  height: 100px;
+}
+
+.interak .leftInterak {
+  background-image: url("../Aseprite/tombolInterakKiri.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.interak .rightInterak {
+  background-image: url("../Aseprite/tombolInterakKanan.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.interak .closeInterak {
+  padding-right: 60px;
+  background-image: url("../Aseprite/tombolInterakTutup.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
