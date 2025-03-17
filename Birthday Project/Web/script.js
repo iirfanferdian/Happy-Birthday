@@ -14,14 +14,14 @@ const interakButtonClose = document.querySelector(".closeInterak")
 const audioAku = document.querySelector(".audio")
 
 
-const audioKucing = ["../Aseprite/Cat Meow 1.wav", "../Aseprite/Cat Meow 2.wav"]
+// const audioKucing = ["../Aseprite/Cat Meow 1.wav", "../Aseprite/Cat Meow 2.wav"]
 
 const photoLabel = document.querySelector(".photoLabel")
-const audioWalk = new Audio("https://iirfanferdian.github.io/Happy-Birthday/docs/walking%20SFX.mp3")
-audioWalk.volume = 0.01
-audioWalk.loop = true
+// const audioWalk = new Audio("https://iirfanferdian.github.io/Happy-Birthday/docs/walking%20SFX.mp3")
+// audioWalk.volume = 0.01
+// audioWalk.loop = true
 
-const audioClick = new Audio ("../Aseprite/click SFX.mp3")
+// const audioClick = new Audio ("../Aseprite/click SFX.mp3")
 
 
 const isiNoteArray = [document.querySelector(".scrollIsi" + "1"),
@@ -57,7 +57,7 @@ function moveLeft(){
         backgroundAxis += 10
         currentFrame = (currentFrame + 1) % 2;
         player.style.backgroundImage = `url("../Aseprite/${moveCatFrameLeft[currentFrame]}")`;
-        audioWalk.play();
+        // audioWalk.play();
         console.log(backgroundAxis)
     }else{
         if (playerAxis >=25){
@@ -65,7 +65,7 @@ function moveLeft(){
             player.style.left = playerAxis + "px"
             currentFrame = (currentFrame + 1) % 2;
             player.style.backgroundImage = `url("../Aseprite/${moveCatFrameLeft[currentFrame]}")`;
-            audioWalk.play();
+            // audioWalk.play();
             console.log(backgroundAxis)
         }
     }
@@ -79,14 +79,14 @@ function moveRight(){
 
         currentFrame = (currentFrame + 1) % 2;
         player.style.backgroundImage = `url("../Aseprite/${moveCatFrameRight[currentFrame]}")`;
-        audioWalk.play();
+        // audioWalk.play();
         console.log(backgroundAxis)
     }else if(backgroundAxis > -3000){
         background.style.left = backgroundAxis + "px"
         backgroundAxis -= 10
         currentFrame = (currentFrame + 1) % 2;
         player.style.backgroundImage = `url("../Aseprite/${moveCatFrameRight[currentFrame]}")`;
-        audioWalk.play();
+        // audioWalk.play();
         console.log(backgroundAxis)
     }
 }
@@ -190,8 +190,8 @@ leftButton.addEventListener("touchstart", () => {
 });
 leftButton.addEventListener("touchend", () => {
     clearInterval(moveInterval);
-    audioWalk.pause();
-    audioWalk.currentTime = 0
+    // audioWalk.pause();
+    // audioWalk.currentTime = 0
     player.style.backgroundImage = `url("../Aseprite/${idleCatFrame[1]}")`;
     moveInterval = null;
 });
@@ -203,8 +203,8 @@ rightButton.addEventListener("touchstart", () => {
 });
 rightButton.addEventListener("touchend", () => {
     clearInterval(moveInterval);
-    audioWalk.pause();
-    audioWalk.currentTime = 0
+    // audioWalk.pause();
+    // audioWalk.currentTime = 0
     player.style.backgroundImage = `url("../Aseprite/${idleCatFrame[0]}")`;
     moveInterval = null;
 });
@@ -224,15 +224,15 @@ actionButton.addEventListener("touchstart",()=>{
 })
 
 interakButtonClose.addEventListener("touchstart",()=>{
-    audioClick.play()
+    // audioClick.play()
     interakClose()
 })
 interakButtonKiri.addEventListener("touchstart",()=>{
-    audioClick.play()
+    // audioClick.play()
     interakButton("kiri", modeStatus)
 })
 interakButtonKanan.addEventListener("touchstart",()=>{
-    audioClick.play()
+    // audioClick.play()
     interakButton("kanan", modeStatus)
 })
 
