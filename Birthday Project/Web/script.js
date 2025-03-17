@@ -17,7 +17,7 @@ const audioAku = document.querySelector(".audio")
 const audioKucing = ["../Aseprite/Cat Meow 1.wav", "../Aseprite/Cat Meow 2.wav"]
 
 const photoLabel = document.querySelector(".photoLabel")
-const audioWalk = new Audio("../Aseprite/walking SFX.mp3")
+const audioWalk = new Audio("https://iirfanferdian.github.io/Happy-Birthday/docs/walking%20SFX.mp3")
 audioWalk.volume = 0.01
 audioWalk.loop = true
 
